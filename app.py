@@ -43,9 +43,9 @@ def predictDisease(symptoms):
     
     symptoms = symptoms.split(",")
     
-    # Ensure at least 4 symptoms are provided
-    if len(symptoms) < 4:
-        raise ValueError("Please provide at least 4 symptoms for an accurate prediction.")
+    # Ensure at least 5 symptoms are provided
+    if len(symptoms) < 5:
+        raise ValueError("Please provide at least 5 symptoms for an accurate prediction.")
     
     # Creating input data for the models
     input_data = [0] * len(data_dict["symptom_index"])
